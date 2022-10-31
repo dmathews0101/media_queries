@@ -1,0 +1,93 @@
+/* 
+
+@media () {
+}
+----------------------
+max-width: width
+width - less than #px
+----------------------
+min-width: width
+width - more than #px
+----------------------
+
+@media all and (max-width: 500px) {
+    .title {
+        color: white;
+    }
+    body {
+        background: black;
+    }
+}
+
+*/
+
+body {
+    color: red;
+}
+
+.title {
+    font-size: 6rem;
+}
+
+.subtitle {
+    font-size: 4rem;
+}
+
+/* Whenever on any type of screen, and max-width of 500px,
+so essentially, anything that is less than 500 pixels wide,
+our text turns blue
+*/
+
+/* Max Width */
+
+/* @media all and (max-width: 500px) {
+    body {
+        color: blue;
+    }
+} */
+
+/* Media Queries - For Landscape and portrait 
+
+@media (orientation: landscape) {
+    .title {
+        color: green;
+    }
+}
+
+@media (orientation: portrait) {
+    .title {
+        color: cyan;
+    }
+}
+*/
+
+/* Combination of media queries - and*/
+
+/* @media (orientation: landscape) and (max-width: 500px) {
+    .title {
+        color: green;
+    }
+} */
+
+/* Combination of media queries - or*/
+/* Any time we are under 500px or in landscape mode, it is going to be green */
+
+/* @media (orientation: landscape), (max-width: 500px) {
+    .title {
+        color: green;
+    }
+} */
+
+
+/* Min Width */
+/* Opposite of max-width, over 500px wide and in landscape mode, so
+ */
+
+@media all and (max-width: 500px) {
+    .title {
+        color: white;
+    }
+    body {
+        background: black;
+    }
+}
